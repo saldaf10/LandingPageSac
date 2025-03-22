@@ -1,63 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Landing Page - Verificación</title>
   <style>
-    body {
-      font-family: sans-serif;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #fff;
+      color: #000;
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: #f9f9f9;
+      min-height: 100vh;
     }
     header {
-      background: #333;
-      color: #fff;
       width: 100%;
-      padding: 1em;
+      padding: 1.5rem;
+      background: #000;
       text-align: center;
+      color: #fff;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: normal;
     }
     main {
-      background: #fff;
-      max-width: 600px;
       width: 90%;
-      margin: 2em auto;
-      padding: 2em;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 2rem auto;
       text-align: center;
     }
-    img {
+    .profile-pic {
       width: 150px;
       height: 150px;
       object-fit: cover;
       border-radius: 50%;
-      margin-bottom: 1em;
+      margin: 1rem auto;
+      display: block;
+      filter: grayscale(100%);
+    }
+    h2 {
+      margin: 1rem 0;
+      font-size: 1.5rem;
+      font-weight: 500;
     }
     .info {
-      margin: 1em 0;
+      margin: 1rem 0;
       text-align: left;
+      background: #f0f0f0;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    .info p {
+      margin-bottom: 0.5rem;
     }
     footer {
       margin-top: auto;
-      padding: 1em;
-      background: #333;
-      color: #fff;
       width: 100%;
+      background: #000;
       text-align: center;
+      color: #fff;
+      padding: 1rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Verificación de Cuenta Meta</h1>
+    <h1>Verificación de Cuenta</h1>
   </header>
 
   <main>
-    <img src="https://via.placeholder.com/150" alt="Foto de perfil">
+    <img
+      src="https://via.placeholder.com/150"
+      alt="Foto de perfil"
+      class="profile-pic"
+    />
     <h2>Nombre de la Persona</h2>
     <div class="info">
       <p><strong>Teléfono:</strong> +12 3456 789</p>
@@ -67,7 +90,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 - Tu Empresa</p>
+    <p>&copy; 2025 - Empresa XYZ</p>
   </footer>
 
 </body>
